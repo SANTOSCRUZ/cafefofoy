@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalles de Don Pablo - Café Fofoy & Don Pablo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+
+
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo fofoy.jpg" width="125px" height="45px"></a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li>
+                        <a href="index.html">Inicio</a>
+                        <a href="cafe.html">Café</a>
+                        <a href="nosotros.html">Nosotros</a>
+                        <a href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+            <a href="cafe.html"><img src="images/cart.svg" width="40px" height="40px"></a>
+            <img src="images/menu.png" width="30px" class="menu-icon" 
+            onclick="menutoggle()">
+        </div>
+    </div>
+
+<!--------- single product details --------->
+
+    <div class="small-container single-product">
+        <div class="row">
+            <div class="col-2">
+                <img src="images/cafe caturra molido media libra.jpg" width="100%" id="ProductImg">
+
+                <div class="small-img-row">
+                    <div class="small-img-col">
+                        <img src="images/cafe caturra molido media libra.jpg" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="images/mano greta.JPG" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="images/etiqueta donpablo.jpg" width="100%" class="small-img">
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-2">
+                <p>Caturra 1/2 lb</p>
+                <h1>Café Don Pablo - Caturra</h1>
+                <h4>$10.00</h4>
+                <select>
+                    <option>Seleccionar Estilo</option>
+                    <option>Molido</option>
+                    <option>En Grano</option>
+                </select>
+                <input type="number" value="1">
+                <a href="contacto.html" class="btn">Comprar</a>
+
+                <h3>Detalles del Producto <i class="fa fa-indent"></i></h3>
+                <br>
+                <p>El cafeto Arábigo o Caturra (Coffea arabica) es un arbusto de la familia de las rubiáceas nativo de Etiopía y/o Yemen. <br>Es la principal especie cultivada para la producción de café (obtenido a partir de las semillas tostadas) y la de mayor antigüedad en agricultura, datándose su uso a finales del I milenio en la península arábiga.</p>
+
+            </div>
+        </div>
+    </div>
+
+
+<!--------- footer --------->
+
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Búscanos en Instagram</h3>
+                <p>Descaga el App para Android y iOS</p>
+                <div class="app-logo">
+                    <a href="https://www.instagram.com/cafefofoydonpablo/"><img src="images/logo ig.png" alt=""></a>
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="images/logo bop.png" alt="">
+                <p>Nuestra mision es mantener por generaciones la producción de nuestro café de altura dentro de los parámetros de bioseguridad, delicadeza, aroma y sabor.</p>
+        </div>
+        <div class="footer-col-3">
+            <h3>Enlaces Útiles</h3>
+            <ul>
+                <li>Cupones</li>
+                <li>Actividad</li>
+                <li>Política de Seguros</li>
+                <li>Certificación</li>
+            </ul>
+    </div>
+    <div class="footer-col-4">
+        <h3>Síguenos en Redes Sociales</h3>
+            <ul>
+                <a href="https://www.facebook.com/Café-Fofoy-Don-Pablo-113907193367969"><li>Facebook</li></a> 
+                <a href="https://www.instagram.com/cafefofoydonpablo/"><li>Instagram</li></a>
+                <li>Twitter</li>
+                <li>YouTube</li>
+            </ul>
+        </div>
+    </div>
+    <hr>
+    <p class="copyright">Copyright 2021 - Café Fofoy & Don Pablo</p>
+</div>
+</div>
+
+<!--------- js for toggle menu --------->
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoggle(){
+        if(MenuItems.style.maxHeight == "0px")
+        {
+            MenuItems.style.maxHeight = "200px";
+        }
+        else
+        {
+            MenuItems.style.maxHeight = "0px";
+        }
+    }
+    
+</script>
+
+<!--------- js for product gallery --------->
+
+<script>
+    var ProductImg = document.getElementById("ProductImg");
+    var SmallImg = document.getElementsByClassName("small-img");
+
+        SmallImg[0].onclick = function()
+         {
+            ProductImg.src = SmallImg[0].src;
+         }
+         SmallImg[1].onclick = function()
+         {
+            ProductImg.src = SmallImg[1].src;
+         }
+         SmallImg[2].onclick = function()
+         {
+            ProductImg.src = SmallImg[2].src;
+         }
+         SmallImg[3].onclick = function()
+         {
+            ProductImg.src = SmallImg[3].src;
+         }
+
+
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
