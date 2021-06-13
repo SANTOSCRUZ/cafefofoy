@@ -533,7 +533,7 @@ section::before{
 section .container{
     position: relative;
     min-width: 1100px;
-    min-height: 550px;
+    min-height: 725px;
     display: flex;
     z-index: 1000;
 }
@@ -686,6 +686,10 @@ section .container .contactForm .formBox .inputBox input[type="submit"]:hover{
     background: #563434;
 }
 
+#pagina-en-construccion {
+    font-style: italic;
+}
+
 /*--------- historia ---------*/
 .historia{
     background: radial-gradient(#fff, #cc8e35);
@@ -776,5 +780,3 @@ section .container .contactForm .formBox .inputBox input[type="submit"]:hover{
         font-size: 12px;
     }
 }
-
-
